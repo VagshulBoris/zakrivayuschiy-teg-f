@@ -1,1 +1,22 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font: 'Inter-Variable';
+    --pixel-font: 'PressStart2P-Regular';
+    --heading-weight: 700;
+    --text-weight: 400;
+    --text-color: #000000;
+    --background-color: #ffffff;
+    --background-image: repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+    --hover-button-text-color: #ffffff;
+    /* переменные для сердца*/
+    --heart-contour: #000000;
+    --heart-sparks: #ff0000;
+    --heart-body: #ff0000;
+    --heart-body-hover: #000000;
+    --heart-core: #ffffff;
+    --heart-core-hover: #000000;
+}
+
+
