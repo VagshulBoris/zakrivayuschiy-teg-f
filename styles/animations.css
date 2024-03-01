@@ -48,55 +48,69 @@
   
   /* Анимации сердца */
 
-  .like-icon .heart__body {
-    fill: transparent;
-    transition: fill 0.3s 0.06s linear;
-  }
+    .like-icon.is-liked .heart {
+      transform-origin: center;
+      animation: scale 0.3s 0.1s ease-in 2 alternate;
+    }
 
-  .like-icon .heart__contour {
-    fill: var(--heart-contour);
-    transition: fill 0.1s linear;
-  }
+    .like-icon .heart__contour {
+      fill: var(--heart-contour);
+      transition: fill 0.1s linear;
+    }
+    
+    .like-icon.is-liked .heart__contour {
+      fill: var(--heart-body);
+      transition: fill 0.3s 0.06s linear;
+    }
 
-  .like-icon .heart__core {
-    fill: transparent;
-    transition: fill 0.3s linear;
-  }
+    .heart__body {
+      fill: transparent;
+      transition: fill 0.3s linear;
+    }
+    
+    .like-icon:hover .heart__body {
+      fill: var(--heart-body-hover);
+      transition: fill 0.3s 0.05s linear;
+    }
+    
+    .like-icon:active .heart__body {
+      fill: var(--heart-body);
+      transition: fill 0.3s 0.05s linear;
+    }
+    
+    .like-icon.is-liked .heart__body {
+      fill: var(--heart-body);
+      transition: fill 0.3s 0.05s linear;
+    }
+    
+    .heart__core {
+      fill: transparent;
+      transition: fill 0.3s 0.03s linear;
+    }
+    
+    .like-icon:hover .heart__core {
+      fill: var(--heart-core-hover);
+      transition: fill 0.3s linear;
+    }
+    
+    .like-icon:active .heart__core {
+      fill: var(--heart-body);
+      transition: fill 0.3s linear;
+    }
+    
+    .like-icon.is-liked .heart__core {
+      fill: var(--heart-body);
+      transition: fill 0.3s linear;
+    }
+    
+    .like-icon .heart__sparks {
+      fill: var(--heart-sparks);
+      opacity: 0;
+    }
 
-  .like-icon .heart__sparks {
-    fill: var(--heart-sparks);
-    opacity: 0;
-    transition: opacity 0.3s linear;
-  }
+    .like-icon.is-liked .heart__sparks {
+      transform-origin: center;
+      animation: sparks 0.3s 0.3s ease-in 2 alternate;
+    }
 
-  .like-icon:hover .heart__core {
-    fill: var(--heart-core-hover);
-  }
 
-  .like-icon:hover .heart__body {
-    fill: var(--heart-body-hover);
-  }
-
-  .like-icon.is-liked .heart {
-    transform-origin: center;
-    animation: scale 0.3s 0.1s ease-in alternate;
-  }
-
-  .like-icon.is-liked .heart__sparks {
-    animation: sparks 0.3s 0.3s ease-in alternate;
-  }
-
-  .like-icon:active .heart__body,
-  .like-icon:active .heart__core {
-    fill: var(--heart-body);
-  }
-
-  .like-icon.is-liked .heart__body,
-  .like-icon.is-liked .heart__core,
-  .like-icon.is-liked .heart__contour {
-    fill: var(--heart-body);
-  }
-
-  .like-icon.is-liked .heart__contour {
-    transition: fill 0.3s 0.1s linear;
-  }
