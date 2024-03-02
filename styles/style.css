@@ -40,11 +40,11 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--background-color);
-  height: clamp(20.438rem, 19.535rem + 3.85vw, 23rem);
   border: 2px solid var(--text-color);
   margin-block-start: 100px;
   margin-block-end: 100px;
-  padding-top: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem);
+  padding-block-start: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem);
+  padding-block-end: 21px;
   padding-inline: clamp(0.875rem, -1.469rem + 10vw, 7.531rem);
 }
 
@@ -53,6 +53,7 @@
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   font-weight: 400;
   padding-block-end: 20px;
+  cursor: default;
 }
 
 .header__descriprion {
